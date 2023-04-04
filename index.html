@@ -3,28 +3,78 @@
   <head>
     <title>Jessica Chambers</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css"
+    <link rel="stylesheet" href="styles.css">
+    <script src="slider.js"></script>
   </head>
   <body>
     <h1 id="title">Jessica Chambers</h1>
-    <p id="description"><em>Dancer Portfolio</em></p>
+    <p id="description"><em>Dance Portfolio</em></p>
       <form id="portfolio">
         <fieldset>
-          <h1>About</h1>
-          <h1>Creations</h1>
-          <h1>Headshots</h1>
+          <h2>About </h2>
+          <div class="about_container">
+            <div class="image">
+                <img src="/Jess headshot.jpg" alt="A headshot of Jessica Chambers" style="width:80%">
+            </div>
+            <div class="text">
+              <p>As a professional dancer, Jessica has specialised in contemporary for the past 10 years. Her expertise  in bla bla bla</p>
+            </div>
+          </div>
         </fieldset>
         <fieldset>
-          <h3>Get in touch</h3>
+          <h2>Creations</h2>
+        </fieldset>
+
+        <fieldset>
+          <h2>Headshots</h2>
+
+          <div class="slideshow-container fade">
+              <!-- Full images with numbers and message Info -->
+            <div class="Containers">
+              <div class="MessageInfo">1 / 3</div>
+              <img src="jess headshot 2.jpg" alt="Headshot 1 of Jessica Chambers" style="width:100%">
+              <div class="Info">First Caption</div>
+            </div>
+
+            <div class="Containers" id="container_two">
+              <div class="MessageInfo">2 / 3</div>
+              <img src="jess body 1.jpg" alt="Headshot 2 of Jessica Chambers" style="width:100%">
+              <div class="Info">First Caption</div>
+            </div>
+
+            <div class="Containers" id="container_two">
+              <div class="MessageInfo">3 / 3</div>
+              <img src="jess headshot 3.jpg" alt="Headshot 3 of Jessica Chambers" style="width:100%">
+              <div class="Info">First Caption</div>
+            </div>
+            <!-- Back and forward buttons -->
+            <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+            <!-- The circles/dots -->
+          <div style="text-align:center">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+          </div>
+        </fieldset>
+      </form>
+
+      <form id="get-in-touch">
+        <fieldset>
+          <h2>Get in touch</h2>
           <form method="post" action="jessicachambers@outlook.com">
             <label for="name">Enter Your Name: <input id="name" name="name" type="text" required /></label>
             <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
             <label for="comment" >Add your comment: <input id="comment" name="comment" type="text" required /></label>
           </form>
+          <input type="Submit" id="submit"></submit>
         </fieldset>
       </form>
   </body>
   <footer>
-      <p><em>~ Jessica Chambers  - Website by Anouck Lacombe--Bar ~</em></p>
+    <p id="signoff"><em>~ Jessica Chambers ~</em></p>
+    <p id="credit"><em>Website created by Anouck Lacombe--Bar</em></p>
   </footer>
 </html>
