@@ -32,6 +32,33 @@ form[id="portfolio"] {
   text-align: left;
 }
 
+form[id="login"] {
+  width: 80vw;
+  max-width: 900px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  text-align: left;
+}
+
+div[class="login_container"] {
+  max-width: 400px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+form label{
+  flex-shrink: 0;
+  height: 20px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
 form[id="get-in-touch"] {
   width: 80vw;
   max-width: 400px;
@@ -86,6 +113,18 @@ input[type="submit"] {
   background-color: #232b2b;
   border-color: #232b2b;
   color: white;
+  min-width: 300px;
+}
+
+button {
+  display: block;
+  width: 30%;
+  margin-top: 30px;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #E6E6FA;
+  border-color: #232b2b;
+  color: black;
   min-width: 300px;
 }
 
